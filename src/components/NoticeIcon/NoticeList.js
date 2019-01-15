@@ -99,7 +99,7 @@ export default function NoticeList({
         })}
       </List>
       {showClear ? (
-        <div className={styles.clear} onClick={onClear}>
+        <div className={styles.clear} onClick={() => onClear(title)}>
           {locale.clear} {title}
         </div>
       ) : null}
